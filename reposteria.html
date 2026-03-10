@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Meel - Repostería Artesanal</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="nav-simple">
+        <a href="../Index.html"><i class="fas fa-chevron-left"></i> Volver al Inicio</a>
+    </nav>
+
+    <header class="header-reposteria">
+        <img src="../logo-dulce-meel.png" alt="Logo Dulce Meel" class="logo-chico" style="width: 80px; border-radius: 50%; margin-bottom: 10px;">
+        <h1 class="title-pink">Dulce Meel</h1>
+        <p class="subtitle" style="color: #888; font-style: italic;">Pastelería con amor</p>
+    </header>
+
+    <main class="container" style="max-width: 480px; margin: auto; padding: 15px;">
+        
+        <section class="temporada" style="background: #fce4ec; padding: 15px; border-radius: 25px; margin-bottom: 25px; border: 2px dashed #e95a8b;">
+            <div class="section-title" style="text-align: center; margin-bottom: 15px;">
+                <h2 style="color: #e95a8b; font-size: 1.1rem;">✨ Especiales de Temporada ✨</h2>
+            </div>
+            
+            <div class="card" data-producto="Especial de Temporada" style="background: white; border-radius: 20px; padding: 20px; border: 1px solid #fce4ec;">
+                <span class="badge" style="background: #e95a8b; color: white; font-size: 0.7rem; padding: 4px 12px; border-radius: 10px; display: inline-block; margin-bottom: 10px;">¡Exclusivo!</span>
+                <div class="card-info">
+                    <h3 style="color: #e95a8b; margin: 0;">Budines Navideños</h3>
+                    <p style="font-size: 0.9rem; color: #777;">Artesanales y súper húmedos.</p>
+                    <details style="font-size: 0.85rem; color: #666; cursor: pointer;">
+                        <summary>Ver variedades</summary>
+                        <ul style="padding-left: 20px; margin-top: 10px;">
+                            <li>250g (Solos, chips o frutas)</li>
+                            <li>Grande Glaseado (Limón o Naranja)</li>
+                        </ul>
+                    </details>
+                    <button class="btn-ver" style="width: 100%; background: #e95a8b; color: white; border: none; padding: 12px; border-radius: 50px; font-weight: bold; margin-top: 15px; cursor: pointer;">Consultar Especial</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid-productos">
+            
+            <div class="card" data-producto="Bizcochuelos" style="background: white; border-radius: 20px; padding: 20px; margin-bottom: 15px; border: 1px solid #fce4ec; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                <div class="card-info">
+                    <h3 style="color: #e95a8b; margin: 0;">Bizcochuelos</h3>
+                    <p style="font-size: 0.9rem; color: #777;">Vainilla o Chocolate (con o sin chips)</p>
+                    <button class="btn-ver" style="width: 100%; background: #e95a8b; color: white; border: none; padding: 12px; border-radius: 50px; font-weight: bold; cursor: pointer;">Consultar Pedido</button>
+                </div>
+            </div>
+
+            <div class="card" data-producto="Shots Dulces" style="background: white; border-radius: 20px; padding: 20px; margin-bottom: 15px; border: 1px solid #fce4ec; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                <div class="card-info">
+                    <h3 style="color: #e95a8b; margin: 0;">Shots Dulces</h3>
+                    <p style="font-size: 0.9rem; color: #777;">Frutillas con crema, Oreo, Chocotorta o Durazno.</p>
+                    <button class="btn-ver" style="width: 100%; background: #e95a8b; color: white; border: none; padding: 12px; border-radius: 50px; font-weight: bold; cursor: pointer;">Pedir mis Shots</button>
+                </div>
+            </div>
+
+            <div class="card" data-producto="Cupcakes" style="background: white; border-radius: 20px; padding: 20px; margin-bottom: 15px; border: 1px solid #fce4ec; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                <div class="card-info">
+                    <h3 style="color: #e95a8b; margin: 0;">Cupcakes & Magdalenas</h3>
+                    <p style="font-size: 0.9rem; color: #777;">Con glaseado o crema chantilly.</p>
+                    <button class="btn-ver" style="width: 100%; background: #e95a8b; color: white; border: none; padding: 12px; border-radius: 50px; font-weight: bold; cursor: pointer;">Consultar Packs</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="delivery-notice-pink" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: white; border: 2px solid #fce4ec; padding: 15px; border-radius: 15px; margin-top: 20px; color: #e95a8b; font-size: 0.85rem; text-align: center;">
+            <i class="fas fa-star"></i>
+            <p style="margin: 0;">Envío <strong>GRATIS</strong> en Poeta Lugones y alrededores</p>
+            <i class="fas fa-star"></i>
+        </div>
+    </main>
+
+    <script src="script-reposteria.js"></script>
+</body>
+</html>
