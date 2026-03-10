@@ -11,7 +11,7 @@
     padding: 20px;
     text-align: center;
     box-sizing: border-box;
-    overflow: hidden; /* Evita scrolls innecesarios en la bienvenida */
+    overflow-y: auto; /* Permite scroll si el contenido excede el viewport */
 }
 
 /* Cabecera con Logo */
@@ -64,6 +64,14 @@
     font-size: 1.1rem;
     transition: all 0.3s ease;
     color: white;
+    cursor: pointer;
+    border: none;
+}
+
+/* Efecto hover para desktop */
+.btn-portal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Efecto al tocar el botón en el celular */
@@ -99,6 +107,7 @@
     display: flex;
     gap: 25px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .social-icons a {
@@ -108,14 +117,29 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
 }
 
 .ig-link { color: #e1306c; } /* Color Instagram */
 .wsp-link { color: #25d366; } /* Color WhatsApp */
 
-/* Animaciones simples para que la página no sea estática */
+/* Animaciones con prefijos de navegador para máxima compatibilidad */
+@-webkit-keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 @keyframes fadeInDown {
     from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@-webkit-keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
@@ -124,7 +148,50 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+/* Media queries para responsividad en dispositivos pequeños */
+@media (max-width: 480px) {
+    .welcome-container {
+        padding: 15px;
+    }
+
+    .welcome-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .welcome-header {
+        margin-bottom: 30px;
+    }
+
+    .logo-welcome {
+        width: 120px;
+        height: 120px;
+    }
+
+    .btn-portal {
+        padding: 16px;
+        font-size: 0.95rem;
+        gap: 12px;
+    }
+
+    .welcome-nav {
+        max-width: 100%;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+
+    .social-icons a {
+        font-size: 0.8rem;
+    }
 }
