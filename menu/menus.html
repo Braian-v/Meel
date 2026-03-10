@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menús del Día - Dulce Meel</title>
+    <link rel="stylesheet" href="../Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="nav-simple">
+        <a href="../Index.html"><i class="fas fa-arrow-left"></i> Volver al Inicio</a>
+    </nav>
+
+    <main class="container">
+        <header class="section-header">
+            <img src="../logo-dulce-meel.png" alt="Logo" class="logo-chico" style="width: 70px; border-radius: 50%;">
+            <h1>Menús del Día</h1>
+        </header>
+
+        <div class="menu-hoy-card">
+            <span class="tag">LO QUE PODÉS PEDIR HOY</span>
+            <h2 id="plato-hoy">Cargando menú...</h2>
+            
+            <div class="info-vianda">
+                <p><i class="far fa-clock"></i> Pedidos hasta las <strong>11:00 am</strong></p>
+                <p><i class="fas fa-truck"></i> Envío <strong>GRATIS</strong> en Poeta Lugones</p>
+            </div>
+            
+            <button class="btn-pedido-wsp" id="pedir-comida">
+                <i class="fab fa-whatsapp"></i> Hacer Pedido
+            </button>
+        </div>
+
+        <div class="cronograma-container">
+            <h3>Cronograma de la Semana</h3>
+            <div class="lista-dias">
+                <div class="item-dia" id="d-1"><span>Lunes</span> <p>Arroz amarillo con pollo</p></div>
+                <div class="item-dia" id="d-2"><span>Martes</span> <p>Tortilla de papas con <br> hamburguesa</p></div>
+                <div class="item-dia" id="d-3"><span>Miércoles</span> <p>Milanesas de pechuga a la napolitana</p></div>
+                <div class="item-dia" id="d-4"><span>Jueves</span> <p>Costeleta a caballo con papas fritas</p></div>
+                <div class="item-dia" id="d-5"><span>Viernes</span> <p>Empanadas árabes</p></div>
+                <div class="item-dia" id="d-6"><span>Sábado</span> <p>Pastas con salsa bolognesa</p></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script-menus.js"></script>
+</body>
+</html>
