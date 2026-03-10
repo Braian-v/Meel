@@ -1,18 +1,56 @@
-.menu {
-  background-color: #f8f8f8;
-  padding: 10px;
+:root {
+    --brown: #5d4037;
+    --brown-light: #d7ccc8;
+    --green-wsp: #25d366;
+    --bg-crema: #fffdfa;
 }
 
-.menu-item {
-  display: inline-block;
-  margin-right: 15px;
+body { font-family: 'Segoe UI', sans-serif; background: var(--bg-crema); margin: 0; color: var(--brown); }
+
+.container { padding: 20px; max-width: 500px; margin: auto; }
+
+.nav-simple { padding: 15px; background: white; border-bottom: 1px solid #eee; }
+.nav-simple a { text-decoration: none; color: var(--brown); font-weight: bold; font-size: 0.9rem; }
+
+.section-header { text-align: center; margin-bottom: 30px; }
+.icon-main { font-size: 2.5rem; color: var(--brown); margin-bottom: 10px; }
+
+/* CARD DE HOY */
+.menu-hoy-card {
+    background: var(--brown);
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(93, 64, 55, 0.2);
 }
 
-.menu-item a {
-  text-decoration: none;
-  color: #333;
+.tag { background: #ffccbc; color: #d84315; padding: 5px 12px; border-radius: 10px; font-weight: bold; font-size: 0.75rem; }
+
+.menu-hoy-card h2 { font-size: 1.5rem; margin: 15px 0; line-height: 1.3; }
+
+.info-vianda { font-size: 0.85rem; margin-bottom: 20px; opacity: 0.9; }
+
+.btn-pedido-wsp {
+    background: var(--green-wsp);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
-.menu-item a:hover {
-  color: #007BFF;
-}
+/* LISTA SEMANAL */
+.cronograma-container { background: white; margin-top: 30px; padding: 20px; border-radius: 15px; border: 1px solid #efebe9; }
+
+.item-dia { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #f5f5f5; }
+.item-dia span { font-weight: bold; color: var(--brown); }
+.item-dia p { margin: 0; color: #777; font-size: 0.9rem; text-align: right; }
+
+/* Clase para resaltar el día actual en la lista */
+.hoy-resaltado { background: #fff3e0; border-radius: 8px; transform: scale(1.02); }
+
+.nota-postres { font-size: 0.8rem; color: #999; text-align: center; font-style: italic; margin-top: 15px; }
